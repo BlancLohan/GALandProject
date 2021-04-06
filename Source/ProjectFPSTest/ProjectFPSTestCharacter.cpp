@@ -71,7 +71,7 @@ void AProjectFPSTestCharacter::BeginPlay()
 
 	//Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor
 	FP_Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
-
+	FP_Gun->SetRelativeRotation(FP_Gun->GetRelativeRotation() + FRotator(180.f,0.f, 180.f));
 	Mesh1P->SetHiddenInGame(false, true);
 }
 
