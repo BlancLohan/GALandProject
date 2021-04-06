@@ -126,7 +126,10 @@ void AProjectFPSTestCharacter::OnFire()
 			World->SpawnActor<AProjectFPSTestProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
 		}
 	}
+}
 
+void AProjectFPSTestCharacter::OnFireMulti()
+{
 	// try and play the sound if specified
 	if (FireSound != NULL)
 	{
