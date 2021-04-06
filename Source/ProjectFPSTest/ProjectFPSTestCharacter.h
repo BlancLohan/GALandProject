@@ -63,7 +63,10 @@ public:
 protected:
 	
 	/** Fires a projectile. */
+	UFUNCTION(BlueprintCallable)
 	void OnFire();
+	UFUNCTION(BlueprintCallable)
+	void OnFireMulti();
 
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
